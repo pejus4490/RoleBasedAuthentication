@@ -1,0 +1,79 @@
+﻿@model Login.ViewModel.LoginVm
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Login.styles.css" asp-append-version="true" />
+    <style>
+
+       
+
+    </style>
+
+</head>
+<body>
+
+    
+    <div class="login-section">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="login-body">
+                    <div class="svg-img">
+                        <img src="~/image/undraw_login_re_4vu2.svg" class="img-fluid" alt="Login" />
+                      
+                    </div>
+                    <h4 class="text-center mt-3">Login Here</h4>
+                    <form asp-action="Login" asp-controller="Account" method="post" class="row g-3 needs-validation">
+                        <div class="col-md-12">
+                            <label asp-for="UserName" class="form-label"></label>
+                            <input asp-for="UserName" class="form-control form-control-sm" />
+                            <span style="font-size:small" class="text-danger" asp-validation-for="UserName"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="Password" class="form-label text-sm"></label>
+                            <input asp-for="Password" type="password" class="form-control form-control-sm" />
+                            <span style="font-size:small" class="text-danger" asp-validation-for="Password"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between">
+                                <div class="create-account">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" asp-for="RememberMe" />
+                                            @Html.DisplayNameFor(model => model.RememberMe)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="forgotten">
+                                    <a href="#">Forgot Password?</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-primary login-btn" type="submit">LogIn</button>
+                        </div>
+                    </form>
+                    <div class="text-center dont-have">Don’t have an account? <a asp-action="Reg" asp-controller="Account">Register</a></div>                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+</body>
+</html>

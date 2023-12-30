@@ -1,0 +1,116 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.login-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+    overflow-x: hidden;
+}
+
+    .login-section .login-body {
+        width: 30%;
+        margin: auto;
+        padding: 20px 20px;
+        border-style: solid;
+        border-color: #DBD6D6;
+        border-width: 1px;
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+        .login-section .login-body .svg-img {
+            width: 100%;
+            border: none;
+            text-align: center;
+            border-radius: 4px;
+            background-color: #F6F6F6;
+        }
+
+            .login-section .login-body .svg-img img {
+                width: 130px;
+                height: 90px;
+            }
+
+        .login-section .login-body h4 {
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+        }
+
+        .login-section .login-body p {
+            color: #6A6868;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .login-section .login-body form input:focus {
+            border-color: #272727;
+            outline: #272727;
+            box-shadow: none;
+        }
+
+        .login-section .login-body form .forgotten a {
+            text-decoration: none;
+            color: #6A6868;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+            .login-section .login-body form .forgotten a:hover {
+                text-decoration: underline;
+            }
+
+        .login-section .login-body form .create-account a {
+            text-decoration: none;
+            color: #6A6868;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+            .login-section .login-body form .create-account a:hover {
+                text-decoration: underline;
+            }
+
+        .login-section .login-body form .form-check input:checked {
+            border-color: #272727;
+            background-color: #272727;
+        }
+
+        .login-section .login-body form .login-btn {
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            color: white;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            margin: auto;
+            background-color: #272727;
+            border-style: solid;
+            border-color: #272727;
+            border-radius: 4px;
+        }
